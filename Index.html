@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de Mensajes</title>
+    <link rel="stylesheet" href="Challeng.css">
+</head>
+
+<body>
+    <div class="marco">
+        <header>
+            <h1 id="site-title">Encriptador de Mensajes</h1>
+            <div class="window-icons">
+                <img src="./assets/remove_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.png" alt="Minimize" class="icon _Blues"
+                    id="">
+                <img src="./assets/close_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.png" alt="Close" class="icon cruss"
+                    id="icone_red">
+            </div>
+        </header>
+        <div id="password-modal" class="password-modal">
+            <form class="password-form">
+                <label for="password-input" class="password-label">Contraseña:</label>
+                <input type="password" id="password-input" class="password-input">
+                <button type="submit" id="password-submit" class="action-button">Ingresar</button>
+            </form>
+        </div>
+        <main>
+            <section class="message-section">
+                <h2>Procesar Mensaje</h2>
+                <textarea id="message-input" class="text-input" placeholder="Escribe tu mensaje aquí"></textarea>
+                <div class="button-group">
+                    <button id="encrypt-button" class="action-button">Encriptar</button>
+                    <button id="decrypt-button" class="action-button">Desencriptar</button>
+                </div>
+            </section>
+            <section class="result-section">
+                <h2>Resultado</h2>
+                <div id="result" class="result-output"></div>
+                <button id="copy-button" class="action-button">Copiar Resultado</button>
+            </section>
+        </main>
+        <footer>
+            <p>© 2023 Encriptador de Mensajes</p>
+        </footer>
+    </div>
+    <script src="Challeng.js"></script>
+</body>
+
+</html>

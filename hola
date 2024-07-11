@@ -1,0 +1,384 @@
+body {
+    margin: 0;
+    font-family: 'Courier New', monospace;
+    background-color: #008080;
+    color: #00ff00;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+header {
+    background-color:#c4cdd2;
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    color: #00ff00;
+    border-bottom: 1px solid #00ff00;
+}
+
+#site-title {
+    margin: 0;
+    font-size: 2rem;
+}
+
+main {
+    flex: 1;
+    width: 90%;
+    max-width: 800px;
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color:#ffffff;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 255, 0, 0.3);
+}
+
+h2 {
+    margin-top: 0;
+    color: #00ff00;
+}
+
+.text-input {
+    width: 95.1%;
+    height: 150px;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #787878;
+    background-color: #c0c0c0;
+    color: #00ff00;
+    resize: none;
+    font-family: 'Courier New', monospace;
+}
+
+.button-group {
+    display: flex;
+    gap: 10px;
+}
+
+.action-button {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color:#c0c0c0;
+    color: #00ff00;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    box-shadow: 0 2px 5px rgba(0, 255, 0, 0.2);
+}
+
+.action-button:hover {
+    background-color: #9d9d9d;
+    transform: translateY(-3px);
+    box-shadow: 0 4px 10px rgba(0, 255, 0, 0.4);
+}
+
+.action-button:active {
+    transform: translateY(0);
+    box-shadow: none;
+}
+
+.result-output {
+    padding: 10px;
+    background-color:#c0c0c0;
+    border: 1px solid #00ff00;
+    border-radius: 5px;
+    min-height: 100px;
+    color: #00ff00;
+    font-family: 'Courier New', monospace;
+}
+
+footer {
+    background-color: #000000;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    color: #00ff00;
+    border-top: 1px solid #00ff00;
+}
+/* Estilos para el modal de contraseña */
+.password-modal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo semi-transparente */
+    z-index: 9999;
+}
+
+.password-form {
+    background-color: #000000;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 255, 0, 0.5);
+}
+
+.password-label {
+    color: #00ff00;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.password-input {
+    width: 50%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #00ff00;
+    background-color: #000000;
+    color: #00ff00;
+    font-family: 'Courier New', monospace;
+}
+
+.password-input:focus {
+    outline: none;
+    border-color: #00ff00;
+}
+
+.password-input::placeholder {
+    color: #00ff00;
+}
+
+.password-input:focus::placeholder {
+    color: transparent;
+}
+
+.password-submit {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #003300;
+    color: #00ff00;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    box-shadow: 0 2px 5px rgba(0, 255, 0, 0.2);
+}
+
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Courier New', monospace;
+    
+    background-color: #C3C7CB;
+    color: #000;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url("./assets/wallpaperbetter.jpg"); /* URL del icono de fondo de Windows 98 */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+.marco{
+    border:solid blueviolet 10px;
+    
+}
+
+header {
+    background-color: #004e98;
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    color: #ffffff;
+    border-bottom: 2px solid #000;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#site-title {
+    margin: 0;
+    font-size: 2rem;
+}
+
+.window-icons {
+    display: flex;
+    gap: 5px;
+    
+}
+
+.icon {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    border: 1px solid ;
+    border-radius: 3px;
+    
+}
+#icone_red{
+    background-color: red;
+}
+
+
+main {
+    flex: 1;
+    width: 90%;
+    max-width: 800px;
+    padding: 20px;
+    background-color: #e4e4e4;
+    border: 2px solid #000;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    margin-bottom: 20px;
+}
+
+section {
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #ffffff;
+    border: 2px solid #000;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+h2 {
+    margin-top: 0;
+    color: #004e98;
+}
+
+.text-input {
+    width: 100%;
+    height: 150px;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 2px solid #000;
+    background-color: #e4e4e4;
+    color: #000;
+    resize: none;
+    font-family: 'Courier New', monospace;
+}
+
+.button-group {
+    display: flex;
+    gap: 10px;
+}
+
+.action-button {
+    flex: 1;
+    padding: 10px;
+    border: 2px solid #000;
+    border-radius: 5px;
+    background-color: #e4e4e4;
+    color: #000;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.action-button:hover {
+    background-color: #c0c0c0;
+    transform: translateY(-3px);
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+.action-button:active {
+    transform: translateY(0);
+    box-shadow: none;
+}
+
+.result-output {
+    padding: 10px;
+    background-color: #e4e4e4;
+    border: 2px solid #000;
+    border-radius: 5px;
+    min-height: 100px;
+    color: #000;
+    font-family: 'Courier New', monospace;
+}
+
+footer {
+    background-color: #004e98;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    color: #ffffff;
+    border-top: 2px solid #000;
+}
+
+/* Estilos para el modal de contraseña */
+.password-modal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo semi-transparente */
+    z-index: 9999;
+}
+
+.password-form {
+    background-color: #ffffff;
+    padding: 20px;
+    border: 2px solid #000;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.password-label {
+    color: #004e98;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.password-input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 2px solid #000;
+    background-color: #e4e4e4;
+    color: #000;
+    font-family: 'Courier New', monospace;
+}
+
+.password-input:focus {
+    outline: none;
+    border-color: #004e98;
+}
+
+.password-input::placeholder {
+    color: #000;
+}
+
+.password-input:focus::placeholder {
+    color: transparent;
+}
+
+.password-submit {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #000;
+    border-radius: 5px;
+    background-color: #e4e4e4;
+    color: #000;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+
+
